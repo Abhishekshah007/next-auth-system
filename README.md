@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#overview
 
-## Getting Started
+This is a full-stack Next.js authentication system using MongoDB as the backend database, JWT (JSON Web Tokens) for authentication and authorization, and Nodemailer with Mailcatcher for sending verification emails.
 
-First, run the development server:
+#System Components
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    #Backend
+    
+    - Handles user registration and login requests
+    - Validates user input and stores user data in MongoDB
+    - Generates and verifies JWT tokens for authentication
+    - Sends verification emails using Nodemailer and Mailcatcher
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    #Frontend (Next.js)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    - Handles user interactions with the application
+    - Handles authentication and authorization using JWT tokens
+    - Displays user data and allows users to update their profiles
+    
+    #MongoDB (Database)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    - Stores user data and other application data
+    - Nodemailer (Email Library)
+    - Sends verification emails to users after registration
 
-## Learn More
+    #Mailcatcher (Email Catcher)
 
-To learn more about Next.js, take a look at the following resources:
+    - Catches and displays incoming emails for testing and debugging purposes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+#Setup
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    To set up the system, follow these steps:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    - Clone the repository and navigate to the project directory.
+    - Run npm install to install all dependencies.
+    - Create a new MongoDB database and update the mongodb variable in .env (MONGODB_URI) to point to your database.
+    - Update the nodemailer settings in .env to match your email server settings.
+    - Run <code>npm run dev</code> to start the development server.
+
+    

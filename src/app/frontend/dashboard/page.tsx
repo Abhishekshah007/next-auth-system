@@ -55,7 +55,7 @@ export default function Page() {
   }
 
   return (
-    <div className="justify-center h-screen bg-gray-100 p-20">
+    <div className="justify-center h-screen bg-gray-100 p-20" style={{backgroundImage: "url('https://res.cloudinary.com/drrzakkgo/image/upload/v1732557970/ojlkghn2mphkf4a0p47h.jpg')", backgroundPosition: "center"}}>
       <ToastContainer  />
       <h1 className="text-3xl font-bold">Dashboard</h1>
       <button

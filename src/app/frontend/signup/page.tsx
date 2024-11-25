@@ -63,19 +63,19 @@ export default function Page() {
   }, [user]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center " style={{backgroundImage: "url('https://res.cloudinary.com/drrzakkgo/image/upload/v1732557970/ojlkghn2mphkf4a0p47h.jpg')", backgroundPosition: "center"}}>
       <ToastContainer />
-      <div className="container max-w-lg mx-auto p-8 bg-white shadow-lg rounded-lg">
+      <div className="container max-w-lg mx-auto p-8  shadow-lg rounded-lg" style={{backgroundColor:"#f0ffff"}}>
         {loading ? (
           <h1 className="text-2xl font-bold text-blue-500 mb-6" id="header">
             Loading...
           </h1>
         ) : (
-          <h1 className="text-2xl font-bold text-blue-500 mb-6" id="header">
+          <h1 className="text-2xl font-bold text-black mb-6" id="header">
             Registration
           </h1>
         )}
-        {error && <p className="text-red-500">{error}</p>}
+        {error && <p className="text-violet-500">{error}</p>}
         <form className="space-y-4">
           <input
             type="text"
